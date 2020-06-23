@@ -22,7 +22,7 @@ int main()
         {
             printf("... I Am Child Process ...") ;
             scanf( "%c" , &c ) ;
-            if( i < 0 )
+            if( c == 'q' )
             {
                 break ;
             }
@@ -47,6 +47,7 @@ int main()
         /* It Will Wait Until All Its Children Execute Completely.. And The Remaining 
         Code Of Parent After The Wait Function Call Will Be Executed By The Parent Process */
         printf("... Child Has Done It's Work ...") ;
+        printf("... Parent Has Done It's Work ...") ;
         exit(0) ; // Termination Of Parent Process
     }
     else
