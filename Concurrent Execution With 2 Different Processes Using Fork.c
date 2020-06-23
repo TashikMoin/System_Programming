@@ -8,11 +8,12 @@ int main()
     // Start Of Parent Process
     pid_t Id ; // Struct To Get Process ID
     Id = fork() ; 
-    /* A Child Process Will Be Created Similar To The Parent Process.Both Parent & Child Will Start
-    Their Concurrent Execution From The Line Where Fork Is Called. To The Child Process Or Inside 
-    The Child Process Fork Will Be Returning 0 And Withing The Parent Process Scope Fork Will Be 
-    Returning A +VE Value. The Child Process Will Start Its Execution From The Point Fork Is Called
-    & The Code Before Fork Is Not Executed By Child Process It Can Only Be Executed By Parent Process */
+    /* A Child Process Will Be Created Similar To The Parent Process.The Child Will Start
+    It's Execution From The Line Where Fork Is Called & PArent Will Continue It's Remaining Execution. 
+    To The Child Process Or Inside The Child Process Fork Will Be Returning 0 And Withing The Parent 
+    Process Scope Fork Will Be Returning A +VE Value. The Child Process Will Start Its Execution From 
+    The Point Fork Is Call & The Code Before Fork Is Not Executed By Child Process It Can Only Be Executed 
+    By Parent Process */
     if( Id == 0 ) 
     /* Means We Are Checking If Its A Child Process Then Do This.. Because For Child Processes, 
     Fork Returns 0 */
