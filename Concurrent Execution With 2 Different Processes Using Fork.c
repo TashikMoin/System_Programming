@@ -44,7 +44,7 @@ int main()
             }
         }
         wait(NULL) ;
-        /* It Will Wait Until All Its Children Execute Completely.. And The Remaining 
+        /* Parent Will Wait Until All Its Children Execute Completely.. And The Remaining 
         Code Of Parent After The Wait Function Call Will Be Executed By The Parent Process */
         printf("... Child Has Done It's Work ...") ;
         printf("... Parent Has Done It's Work ...") ;
