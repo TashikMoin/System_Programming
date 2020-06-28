@@ -16,7 +16,7 @@ Function.  */
     }
 }
 /* To Run This Code We Have To Link A Dynamic Library And We Have To Run Following Command,
-                            gcc MultiThreading.c -o MultiThreading -lpthread                */
+   gcc MultiThreading.c -o MultiThreading -lpthread                */
 int main(int argc, char const *argv[]) 
 {
     /* Main Thread Executing The Main Function */
